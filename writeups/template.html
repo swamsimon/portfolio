@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080a">
+  <!--
+    HOW TO USE THIS TEMPLATE
+    1. Copy this file and rename it, e.g. instagram-forensics.html
+    2. Replace everything in [square brackets]
+    3. Put screenshots in assets/writeups/ and link them with ../assets/writeups/your-image.png
+    4. On index.html, point the matching project card or post to writeups/your-file.html
+  -->
+  <title>[Write-up title] | [Your Name]</title>
+  <meta name="description" content="[One-sentence summary of this write-up]">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="nav is-scrolled">
+    <div class="nav__inner container">
+      <a href="../index.html" class="nav__logo"><span class="accent">&gt;_</span> [Your Name]</a>
+      <nav class="nav__menu nav__menu--static" aria-label="Main">
+        <a href="../index.html#projects" class="nav__link">Projects</a>
+        <a href="../index.html#writeups" class="nav__link">Write-ups</a>
+        <a href="../index.html#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="article container">
+    <a href="../index.html#writeups" class="article__back">← All write-ups</a>
+
+    <header class="article__head">
+      <span class="post__cat">[Category: Forensics / Incident analysis / CTF walkthrough / Tools / Lessons learned]</span>
+      <h1>[Write-up title]</h1>
+      <p class="article__meta mono">[Date] · [Platform, e.g. TryHackMe] · [Difficulty] · [X] min read</p>
+      <div class="tags"><span>[Tool 1]</span><span>[Tool 2]</span><span>[Tool 3]</span></div>
+    </header>
+
+    <section class="summary">
+      <h2>Summary</h2>
+      <p>[Two or three sentences a recruiter can read in ten seconds: what the task was, what you did, what you found.]</p>
+    </section>
+
+    <h2>1. Objective &amp; scope</h2>
+    <p>[What were you asked to investigate or compromise? What was in scope? What evidence or access did you start with?]</p>
+
+    <h2>2. Environment &amp; tools</h2>
+    <ul>
+      <li>[Tool and version] – [what you used it for]</li>
+      <li>[Tool and version] – [what you used it for]</li>
+    </ul>
+
+    <h2>3. Methodology</h2>
+    <p>[Walk through your steps in order. Explain <em>why</em> you took each step, not only what you typed. That reasoning is what employers look for.]</p>
+<pre><code># Example command or query
+index=main sourcetype=WinEventLog EventCode=4625
+| stats count by src_ip, user
+| where count &gt; 10</code></pre>
+    <p>[Explain what the output showed and what you did next.]</p>
+    <!-- <figure><img src="../assets/writeups/your-screenshot.png" alt="Describe the screenshot"><figcaption>Figure 1 – caption</figcaption></figure> -->
+
+    <h2>4. Findings</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Finding</th><th>Evidence</th><th>MITRE ATT&amp;CK</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>[What you found]</td><td>[Log line, artefact, timestamp]</td><td>[e.g. T1110 Brute Force]</td></tr>
+          <tr><td>2</td><td>[What you found]</td><td>[Log line, artefact, timestamp]</td><td>[Technique ID]</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>5. Indicators of compromise</h2>
+    <ul>
+      <li class="mono">[IP / domain / hash, defanged, e.g. 10.10.10[.]5 or hxxp://example[.]com]</li>
+    </ul>
+
+    <h2>6. Remediation &amp; recommendations</h2>
+    <ul>
+      <li>[What should the organisation do to fix or detect this?]</li>
+    </ul>
+
+    <h2>7. Lessons learned</h2>
+    <p>[What did you get stuck on? What would you do differently? What will you practise next?]</p>
+
+    <aside class="note">
+      <strong>Note on spoilers and ethics.</strong> For active TryHackMe and HTB rooms, describe your methodology without publishing flags or answers, and only publish full HTB walkthroughs for retired machines. Never include real personal data from forensic exercises; redact usernames, faces and account details in screenshots.
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; [Year] [Your Name] · Dublin, Ireland</p>
+      <p><a href="../index.html">Back to portfolio</a></p>
+    </div>
+  </footer>
+</body>
+</html>

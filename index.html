@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08080a">
+  <!-- EDIT: replace [Your Name] everywhere on this page (Ctrl+F) -->
+  <title>  Swam Yee Zaw | Cybersecurity Analyst Portfolio</title>
+  <meta name="description" content="Cybersecurity portfolio of Swam Yee Zaw – MSc Cyber Security (NCI), ISC2 CC. SOC, digital forensics, network security and hands-on labs. Based in Dublin, Ireland.">
+  <meta property="og:title" content=" Swam Yee Zaw | Cybersecurity Analyst">
+  <meta property="og:description" content="SOC, digital forensics and network security portfolio – Dublin, Ireland.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#home" class="nav__logo"><span class="accent">&gt;_</span> Swam Yee Zaw</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__menu" id="navMenu" aria-label="Main">
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#certifications" class="nav__link">Certifications</a>
+        <a href="#writeups" class="nav__link">Write-ups</a>
+        <a href="#contact" class="nav__link nav__link--cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 01. HOME ============ -->
+    <section class="hero" id="home">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero__inner container">
+        <div class="hero__text">
+          <p class="mono hero__prompt"><span class="accent">$</span> whoami</p>
+          <h1 class="hero__name">Swam Yee Zaw</h1>
+          <p class="hero__title">Cybersecurity Analyst <span class="dot">·</span> SOC <span class="dot">·</span> Digital Forensics</p>
+          <!-- EDIT: your career objective, 1–2 sentences -->
+          <p class="hero__objective">
+            MSc Cyber Security (NCI) seeking graduate and internship opportunities in
+            <strong>SOC Analyst</strong> or <strong>Security Analyst</strong> role where I can apply hands-on
+            skills in log analysis, SIEM, threat detection and incident investigation.
+          </p>
+          <p class="mono hero__typing" aria-live="off"><span class="accent">&gt;</span> <span id="typed"></span><span class="caret">▍</span></p>
+
+          <div class="hero__actions">
+            <!-- EDIT: put your CV at assets/cv.pdf -->
+            <a href="assets/CV.pdf" class="btn btn--primary" download>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" /></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn--ghost">Contact me</a>
+          </div>
+
+          <div class="hero__links">
+            <!-- EDIT: your real profile URLs -->
+            <a href="https://www.linkedin.com/in/swamyee" target="_blank" rel="noopener noreferrer" class="chip">LinkedIn ↗</a>
+            <a href="https://github.com/swamsimon" target="_blank" rel="noopener noreferrer" class="chip">GitHub ↗</a>
+            <a href="https://tryhackme.com/p/grindtilldawn" target="_blank" rel="noopener noreferrer" class="chip">TryHackMe ↗</a>
+          </div>
+        </div>
+
+        <div class="hero__photo">
+          <div class="avatar">
+            <!-- EDIT: add assets/profile.jpg, then delete the initials span below -->
+            <img src="assets/profile.jpg" alt="Portrait of Swam Yee Zaw" id="avatarImg">
+            <span class="avatar__initials">YN</span>
+          </div>
+          <div class="status">
+            <span class="status__dot"></span> Open to opportunities · Dublin
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 02. ABOUT & SKILLS ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="mono section__num">02.</p>
+          <h2>About Me &amp; Technical Skills</h2>
+        </header>
+
+        <div class="about reveal">
+          <div class="about__bio">
+            <!-- EDIT: write in your own voice -->
+            <p>I'm a cybersecurity professional based in Dublin with an <strong>MSc in Cyber Security from the National College of Ireland</strong>. I enjoy the investigative side of security: working through logs, packets and disk images to work out what really happened and how to stop it happening again.</p>
+            <p>Outside of my degree I practise continuously on <strong>TryHackMe</strong> and <strong>Hack The Box</strong>, Build and operate a home lab for detection engineering, developing, testing, and monitoring capabilities and documenting security detection rules what I learn in write-ups below.</p>
+
+            <ul class="facts">
+              <li><span class="mono accent">edu</span> MSc Cyber Security, NCI</li>
+              <!-- EDIT: real numbers from your THM profile -->
+              <li><span class="mono accent">thm</span> Top 2% in Try Hack Me · Completed SOC Level 1 path</li>
+              <li><span class="mono accent">loc</span> Dublin, Ireland</li>
+            </ul>
+          </div>
+
+          <div class="skills">
+            <article class="skill">
+              <h3>SIEM &amp; Log Analysis</h3>
+              <p>Alert triage, correlation searches, Windows event & Sysmon logs.</p>
+              <div class="tags"><span>Splunk</span><span>ELK</span><span>Sysmon</span></div>
+            </article>
+            <article class="skill">
+              <h3>Network Security</h3>
+              <p>Traffic analysis, IDS rules, firewall configuration, segmentation.</p>
+              <div class="tags"><span>Wireshark</span><span>Zeek</span><span>Snort</span></div>
+            </article>
+            <article class="skill">
+              <h3>Digital Forensics</h3>
+              <p>Disk, memory and mobile artefacts; timeline reconstruction; chain of custody.</p>
+              <div class="tags"><span>Autopsy</span><span>FTK Imager</span><span>Volatility</span></div>
+            </article>
+            <article class="skill">
+              <h3>Linux &amp; Windows Admin</h3>
+              <p>User & permission management, hardening, Active Directory, scripting.</p>
+              <div class="tags"><span>Bash</span><span>PowerShell</span><span>AD</span></div>
+            </article>
+            <article class="skill">
+              <h3>Penetration Testing</h3>
+              <p>Enumeration, exploitation and privilege escalation in lab environments.</p>
+              <div class="tags"><span>Kali Linux</span><span>Burp Suite</span><span>Nessus</span><span>Metasploit</span><span>BloodHound</span></div>
+            </article>
+            <article class="skill">
+              <h3>Frameworks</h3>
+              <p>Mapping findings to attacker techniques and incident response phases.</p>
+              <div class="tags"><span>MITRE D3FEND</span><span>MITRE ATT&amp;CK</span><span>NIST IR</span><span>Cyber Kill Chain</span><span>ISO/IEC 27001</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03. PROJECTS & LABS ============ -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="mono section__num">03.</p>
+          <h2>Projects &amp; Practical Labs</h2>
+          <p class="section__lead">Practical investigations and hands-on lab exercises, each documented using a consistent structure covering the objective, methodology, findings, and key learnings.</p>
+        </header>
+
+        <div class="projects">
+          <!-- EDIT: each card links to a write-up page in /writeups/ (copy writeups/template.html) -->
+          <article class="project project--featured reveal">
+            <div class="project__top">
+              <span class="badge badge--forensics">Digital Forensics</span>
+              <span class="mono project__type">MSc project</span>
+            </div>
+            <h3>Instagram Digital Forensics Investigation</h3>
+            <p>Forensic Investigation of Instagram application data to trace user activity, collect and analyse evidence, build an activity timeline, and report findings while maintaining the chain of custody.</p>
+            <dl class="project__meta">
+              <div><dt>Objective</dt><dd>Recover and correlate account activity from app data</dd></div>
+              <div><dt>Outcome</dt><dd>Reconstructed a three-stage timeline of an Instagram Direct Message: message sent (T1), Unsend attempt (T2), and application restart (T4). Although the conversation disappeared from the app interface after the restart, the original message text remained in local SQLite records. This demonstrated local data persistence beyond what was visible in the application interface.</dd></div>
+            </dl>
+            <div class="tags"><span>Autopsy</span><span>FTK Imager</span><span>DB Browser for SQLite</span><span>Timeline analysis</span></div>
+            <a href="writeups/template.html" class="project__link">Read case study →</a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="badge badge--offense">Penetration Testing</span>
+              <span class="mono project__type">Hack The Box</span>
+            </div>
+            <h3>HTB DutyBound</h3>
+            <p>End-to-end compromise of the target: enumeration, initial foothold, privilege escalation, plus remediation advice for each weakness found.</p>
+            <div class="tags"><span>Nmap</span><span>Burp Suite</span><span>Linux privesc</span></div>
+            <a href="writeups/template.html" class="project__link">Read write-up →</a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="badge badge--soc">SOC</span>
+              <span class="mono project__type">TryHackMe</span>
+            </div>
+            <h3>SOC Level 1 Investigations</h3>
+            <p>Alert triage and incident investigations across phishing, endpoint and network cases, written up as analyst-style incident reports.</p>
+            <div class="tags"><span>Splunk</span><span>Wireshark</span><span>Phishing analysis</span></div>
+            <a href="writeups/template.html" class="project__link">Read write-up →</a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="badge badge--lab">Home Lab</span>
+              <span class="mono project__type">Ongoing</span>
+            </div>
+            <h3>Home Cybersecurity Lab</h3>
+            <p>Virtualised lab with a Windows domain, Linux hosts, an attacker VM and a SIEM, used to simulate attacks and build detections. Includes network diagram.</p>
+            <div class="tags"><span>Proxmox / VirtualBox</span><span>pfSense</span><span>Wazuh / Splunk</span></div>
+            <a href="writeups/template.html" class="project__link">See lab setup →</a>
+          </article>
+
+          <article class="project reveal">
+            <div class="project__top">
+              <span class="badge badge--network">Network</span>
+              <span class="mono project__type">Analysis</span>
+            </div>
+            <h3>Network Traffic Analysis</h3>
+            <p>PCAP investigations identifying suspicious beaconing, DNS anomalies and data exfiltration, with IOCs extracted and mapped to MITRE ATT&amp;CK.</p>
+            <div class="tags"><span>Wireshark</span><span>MITRE ATT&amp;CK</span></div>
+            <a href="writeups/template.html" class="project__link">Read analysis →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04. CERTIFICATIONS & EDUCATION ============ -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="mono section__num">04.</p>
+          <h2>Certifications &amp; Education</h2>
+        </header>
+
+        <div class="certs">
+          <article class="cert reveal">
+            <span class="cert__status cert__status--done">Earned</span>
+            <h3>ISC2 Certified in Cybersecurity (CC)</h3>
+            <p class="cert__issuer">ISC2 2026</p>
+            <!-- EDIT: link to your Credly badge -->
+            <a href="https://www.credly.com/badges/def352d2-2987-4edc-9752-01cf2c3309b8" class="cert__verify" target="_blank" rel="noopener noreferrer">Verify credential ↗</a>
+          </article>
+
+          <article class="cert reveal">
+            <span class="cert__status cert__status--done">Earned</span>
+            <h3>TryHackMe Certificates</h3>
+            <p class="cert__issuer">TryHackMe SAL 1, Pre Security, CyberSecurity 101</p>
+            <a href="https://tryhackme.com/certificate/THM-Y31GPSSKQG" class="cert__verify" target="_blank" rel="noopener noreferrer">View certificates ↗</a>
+          </article>
+
+          <article class="cert reveal">
+            <span class="cert__status cert__status--progress">In progress</span>
+            <h3>Next certification</h3>
+            <p class="cert__issuer">BTL1 · Target Dec 2026</p>
+            <!-- EDIT: data-progress is your % complete -->
+            <div class="progress"><span data-progress="20"></span></div>
+          </article>
+        </div>
+
+        <div class="edu reveal">
+          <div class="edu__main">
+            <p class="mono accent">2026 – 2027</p>
+            <h3>MSc in Cyber Security</h3>
+            <p class="cert__issuer">National College of Ireland, Dublin </p>
+            <p>Dissertation: </p>
+          </div>
+          <div class="edu__modules">
+            <h4>Relevant modules</h4>
+            <!-- EDIT: your actual modules -->
+            <ul class="modules">
+              <li>Digital Forensics</li>
+              <li>Network Security &amp; Penetration Testing</li>
+              <li>Security Fundamentals &amp; Development</li>
+              <li>Cryptography &amp; Blockchain</li>
+              <li>Malware Analysis</li>
+              <li>Cloud Security</li>
+            </ul>
+          </div>
+          <div class="edu__prev">
+            <p class="mono accent">2022 – 2025</p>
+            <h3>BSc in Information and Communication Technology</h3>
+            <p class="cert__issuer">Rangsit University, Bangkok, Thailand</p>
+          </div>
+          <div class="edu__modules">
+            <h4>Relevant modules</h4>
+            <!-- EDIT: your actual modules -->
+            <ul class="modules">
+              <li>Digital Forensics</li>
+              <li>Network Security</li>
+              <li>Wireless Networking</li>
+              <li>Cloud Computing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05. WRITE-UPS / LEARNING JOURNAL ============ -->
+    <section class="section section--alt" id="writeups">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="mono section__num">05.</p>
+          <h2>Write-ups &amp; Learning Journal</h2>
+          <p class="section__lead">Room write-ups, investigations and notes from the lab.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter write-ups">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="incident">Incident analysis</button>
+          <button class="filter" data-filter="tools">Tools &amp; tutorials</button>
+          <button class="filter" data-filter="forensics">Forensics</button>
+          <button class="filter" data-filter="ctf">CTF walkthroughs</button>
+          <button class="filter" data-filter="lessons">Lessons learned</button>
+        </div>
+
+        <!-- EDIT: one <a class="post"> per write-up. data-cat must match a filter above. -->
+        <div class="posts">
+          <a href="writeups/template.html" class="post reveal" data-cat="incident">
+            <span class="post__cat">Incident analysis</span>
+            <h3>Investigating a phishing alert end to end</h3>
+            <p>From the SIEM alert to email header analysis, IOC extraction and containment recommendations.</p>
+            <span class="post__meta mono">[Date] · 6 min read</span>
+          </a>
+          <a href="writeups/template.html" class="post reveal" data-cat="tools">
+            <span class="post__cat">Tools &amp; tutorials</span>
+            <h3>Splunk searches every SOC analyst should know</h3>
+            <p>Practical SPL queries for failed logons, suspicious processes and lateral movement.</p>
+            <span class="post__meta mono">[Date] · 8 min read</span>
+          </a>
+          <a href="writeups/template.html" class="post reveal" data-cat="forensics">
+            <span class="post__cat">Forensics</span>
+            <h3>Building a timeline from mobile app artefacts</h3>
+            <p>How I extracted and correlated SQLite databases and cache files into one timeline.</p>
+            <span class="post__meta mono">[Date] · 10 min read</span>
+          </a>
+          <a href="writeups/template.html" class="post reveal" data-cat="ctf">
+            <span class="post__cat">CTF walkthrough</span>
+            <h3>TryHackMe: [Room name]</h3>
+            <p>Methodology and reasoning for each stage, without spoiling the flags.</p>
+            <span class="post__meta mono">[Date] · 7 min read</span>
+          </a>
+          <a href="writeups/template.html" class="post reveal" data-cat="lessons">
+            <span class="post__cat">Lessons learned</span>
+            <h3>What my home lab taught me about detection</h3>
+            <p>Mistakes, noisy rules and the detections that actually caught my simulated attacks.</p>
+            <span class="post__meta mono">[Date] · 5 min read</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06. CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="mono section__num">06.</p>
+          <h2>Contact</h2>
+          <p class="section__lead">Currently <strong class="accent">available</strong> for SOC Analyst, Security Analyst and DFIR roles in Dublin, hybrid or remote. Feel free to get in touch.</p>
+        </header>
+
+        <div class="contact">
+          <ul class="contact__list reveal">
+            <li>
+              <span class="mono accent">email</span>
+              <!-- Email is assembled by JavaScript so bots can't scrape it. EDIT in js/main.js -->
+              <a href="#" id="emailLink" class="contact__value">enable JavaScript to view</a>
+            </li>
+            <li>
+              <span class="mono accent">linkedin</span>
+              <a href="https://www.linkedin.com/in/swamyee/" target="_blank" rel="noopener noreferrer" class="contact__value">linkedin.com/in/swamyee</a>
+            </li>
+            <li>
+              <span class="mono accent">github</span>
+              <a href="https://github.com/swamsimon" target="_blank" rel="noopener noreferrer" class="contact__value">github.com/swamsimon</a>
+            </li>
+            <li>
+              <span class="mono accent">location</span>
+              <span class="contact__value">Dublin, Ireland</span>
+            </li>
+            <li>
+              <span class="mono accent">status</span>
+              <span class="contact__value"><span class="status__dot"></span> Open to opportunities  Stamp 2 Visa</span>
+            </li>
+          </ul>
+
+          <!-- Form posts to Formspree (free). EDIT: replace YOUR_FORM_ID in js/main.js. Until then it opens the visitor's email app. -->
+          <form class="form reveal" id="contactForm" novalidate>
+            <div class="form__row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required maxlength="100">
+            </div>
+            <div class="form__row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required maxlength="200">
+            </div>
+            <div class="form__row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required maxlength="3000"></textarea>
+            </div>
+            <!-- honeypot field to catch spam bots -->
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn--primary">Send message</button>
+            <p class="form__status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year"></span> Swam Yee Zaw · Dublin, Ireland</p>
+      <p class="mono"><a href=".well-known/security.txt">security.txt</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
